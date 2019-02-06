@@ -1,9 +1,114 @@
 body,
 html {
-  background-image: url(background.png);
   background: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: 16px;
+  color: black;
   line-height: 1.5em;
+  margin:5px;
+  padding: 10px;
+}
+#main {
+  background-image: url(background2.jpg);
+  background-repeat: no-repeat center fixed;
+  background-size: cover;
+  margin: auto;
+  border-radius: 25px;
+  background-image: -moz-element(5);
+}
+#page-header {
+  background-color: rgba(230, 102, 56, 0.692);
+  border-radius: 25px;
+  height: 190px;
+  background-size: cover;
+}
+#header-title {
+  color: rgb(1, 24, 97);
+  text-align: center;
+  font-family: cursive;
+  font-size: 3rem;
+  text-decoration: underline double;
+}
+.navigate {
+  list-style-type: none;
+  background-color: orangered;
+  padding: 25px;
+  border-radius: 25px;
+}
+.navigate li {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  display: inline;
+  text-align: left;
+  width: 20%;
+  height: 3rem;
+  margin: 5%;
+  margin-top: 9%;
+  text-align: left;
+}
+.nav-botton {
+  background-color: orangered;
+  min-width: 46px;
+  min-height: 46px;
+  padding: 20px;
+}
+.nav-botton :hover {
+  background-color: blue;
+}
+.nav-botton :visited {
+  color: cornsilk;
+}
+.nav-botton :link {
+  color: green;
+}
+#header-note {
+  font-size: 1.25rem;
+  margin-left: 50px;
+}
+#main-address {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+#main-info {
+  width: 50%;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.main-title {
+  font-size: 2rem;
+  color: green;
+  text-decoration: underline dotted blueviolet;
+  margin-left :15px;
+}
+.main-title~p {margin: 10px;}
+.info-list li:nth-child(2n) {
+  background-color: rgba(228, 198, 198, 0.418);
+  
+}
+.info-list li {
+  padding: 2rem;
+  margin-bottom: 15px:
+}
+
+.advantages {margin:20px;
+width:25%;}
+.advantages>p {font-size: 1.5rem;}
+.adv-list li:nth-child(2n){
+    background-color: rgba(95, 158, 160, 0.561)
+}
+.adv-list{font-size: 1.5rem;}
+.side-bar {
+    float: right;
+width :30%;
+position: absolute;
+top:400px;
+right:10px;
+}
+.page-footer {
+    margin:20px;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.534);
+    font-size:18px;
 }
