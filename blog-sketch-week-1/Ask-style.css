@@ -1,68 +1,81 @@
 body,
 html {
-  background: white;
+  background: rgb(34, 92, 157);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: black;
-  line-height: 1.5em;
-  margin: 5px;
-  padding: 10px;
+  line-height: 2rem;
+  margin: 0.5rem;
+  padding: 0.7 rem;
 }
 #main {
   background-image: url(background2.jpg);
   background-repeat: no-repeat center fixed;
   background-size: cover;
   margin: auto;
-  border-radius: 25px;
-  background-image: -moz-element(5);
-}
+  border-radius: 25px;}
+
 #page-header {
-  background-color: rgba(230, 102, 56, 0.692);
-  border-radius: 25px;
-  height: 190px;
-  background-size: cover;
+  background-image: url(tech-head.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat center fixed;
+  border-radius: 2rem;
+  height: 13rem;
+  overflow: none;
+  border: 0.3rem solid;
 }
 #header-title {
-  color: rgb(1, 24, 97);
+  color: white;
   text-align: center;
   font-family: cursive;
   font-size: 3rem;
   text-decoration: underline double;
+  margin: 0.7rem;
+  margin-bottom: 1.5rem;
 }
-.navigate {
-  list-style-type: none;
-  background-color: orangered;
-  padding: 25px;
-  border-radius: 25px;
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between 2rem;
 }
-.navigate li {
-  color: whitesmoke;
-  font-size: 1.5rem;
-  display: inline;
-  text-align: left;
-  width: 20%;
-  height: 3rem;
-  margin: 5%;
-  margin-top: 9%;
-  text-align: left;
+a{text-decoration:none; }
+button {
+  color: white;
+  font-size: 2rem;
+  background-color: rgb(60, 108, 161);
+  min-width: 3rem;
+  min-width: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 0;
 }
-.nav-botton {
-  background-color: orangered;
-  min-width: 46px;
-  min-height: 46px;
-  padding: 20px;
+button :hover {
+  background-color: rgb(202, 100, 16);
 }
-.nav-botton :hover {
-  background-color: blue;
-}
-.nav-botton :visited {
+button :visited {
   color: cornsilk;
 }
-.nav-botton :link {
-  color: green;
+button :link {
+  color: rgb(11, 238, 238);
 }
 #header-note {
+  color: whitesmoke;
   font-size: 1.25rem;
-  margin-left: 50px;
+  margin-left: 3rem;
+  font-style: italic;}
+  form {text-align:center;}
+  .page-footer {
+    border-radius: 2rem;
+    text-align: center;
+    background-color: skyblue;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) 
+  {
+    
+  
 }
