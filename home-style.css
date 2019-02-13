@@ -22,9 +22,9 @@ html {
   flex-wrap: wrap;
 }
 #page-header {
-  background-image:url(tech-head.jpeg);
-  background-size:contain;
-  background-repeat:no-repeat center fixed;
+  background-image: url(tech-head.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat center fixed;
   border-radius: 2rem;
   height: 13rem;
   overflow: none;
@@ -48,14 +48,17 @@ html {
   flex-direction: row;
   justify-content: space-between 2rem;
 }
-a{text-decoration:none; }
-button {color:white;
-  font-size:2rem;
+a {
+  text-decoration: none;
+}
+button {
+  color: white;
+  font-size: 2rem;
   background-color: rgb(60, 108, 161);
   min-width: 3rem;
   min-width: 3rem;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin: 0;
 }
 button :hover {
@@ -99,7 +102,7 @@ button :link {
   background-color: rgba(228, 198, 198, 0.418);
 }
 .info-list li {
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .advantages {
@@ -127,57 +130,65 @@ button :link {
   width: 100%;
 }
 
-  @media only screen and (max-width: 320px) 
-  {
-    button {
-      min-width: 46px;
-      min-height: 46px;
-      padding: .2rem;
-      margin: 0rem;
-    }
-    .container{display: inline;}
-    #main-info > p {
-      width: 100%;
-      height: 50px;
-      overflow: scroll;
-      scroll-behavior: smooth;
-    }
-    .main-title{width: 100%;}
-    html {
-      width: 100%;
-      font-size: 0.5rem;
-      margin: 0;
-    }
-    .advantages > p {
-      font-size: x-small;
-      width: 100%;
-    }
-    
-    .advantages{width: 100%;}
-    li {
-      max-height: 2.5rem;
-      overflow: scroll;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      font-size: x-small;
-      text-align: left;
-    }
-    a {
-      min-width: 46px;
-      min-height: 46px;
-    }
-  
-    .ubunto-icon {
-      width: 20px;
-      height: 20px;
-    }
-    .page-footer {
-      font-size: smaller;
-    }
-    .side-bar {
-      visibility: hidden;
-    }
+@media only screen and (max-width: 320px) {
+  button {
+    min-width: 3rem;
+    min-height: 3rem;
+    padding: 0.2rem;
+    margin: 0rem;
   }
-  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #page-header {
+    font-size: x-small;
+  }
+  #main-info > p {
+    width: 100%;
+    height: 50px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+  .main-title {
+    width: 100%;
+  }
+  html,
+  body {
+    width: 100%;
+    font-size: 0.5rem;
+    margin: 0;
+  }
+  .advantages > p {
+    font-size: x-small;
+    width: 100%;
+  }
+
+  .advantages {
+    width: 100%;
+  }
+  li {
+    max-height: 2.5rem;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: x-small;
+    text-align: left;
+  }
+  a {
+    min-width: 46px;
+    min-height: 46px;
+  }
+
+  .ubunto-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .page-footer {
+    font-size: smaller;
+  }
+  .side-bar {
+    visibility: hidden;
+  }
 }
