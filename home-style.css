@@ -11,42 +11,60 @@ html {
 }
 #main {
   background-image: url(background2.jpg);
-  background-repeat: no-repeat center fixed;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: auto;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 .container {
   width: 100%;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.sub-cont {
+  width:45%;
+  display: flex;
+  flex-direction: column;
 }
 #page-header {
-  background-image: url(tech-head.jpeg);
+  background-image: url(tech-banner.jpeg);
   background-size: contain;
-  background-repeat: no-repeat center fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
   border-radius: 2rem;
   height: 13rem;
-  overflow: none;
-  border: 0.3rem solid;
+  border: 0.3rem solid black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 .ubunto-icon {
   width: 2.5rem;
 }
 #header-title {
   color: white;
-  text-align: center;
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 3rem;
+  font-style: italic;
   text-decoration: underline double;
   margin: 0.7rem;
   margin-bottom: 1.5rem;
+  align-self: center;
 }
-.menu {
+#menu {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between 2rem;
+  justify-content: space-around;
 }
 a {
   text-decoration: none;
@@ -58,11 +76,11 @@ button {
   min-width: 3rem;
   min-width: 3rem;
   padding: 1rem;
-  border-radius: 0.5rem;
-  margin: 0;
+  border-radius: 1.5rem;
+  flex: 0.5 2 25%;
 }
-button :hover {
-  background-color: rgb(202, 100, 16);
+button:hover {
+  background-color: rgb(238, 87, 213);
 }
 button :visited {
   color: cornsilk;
@@ -72,23 +90,30 @@ button :link {
 }
 #header-note {
   color: whitesmoke;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin-left: 3rem;
   font-style: italic;
+  align-self: flex-start;
 }
 #main-address {
   font-size: 3rem;
-  text-align: center;
-  width: 100%;
-  padding-top: 1rem;
-  text-decoration: underline double orange;
+  align-self: center;
+  text-decoration: underline double rgb(255, 115, 0);
+}
+.article-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
 }
 #main-info {
-  width: 50%;
-  font-size: 1.5rem;
-  padding: 1rem;
+display: flex;
+flex-direction: column;
+  width: 45%;
+  padding: .3rem;
+  font-size: 1.4rem;
 }
 .main-title {
+  text-align: center;
   font-size: 2rem;
   color: green;
   text-decoration: underline dotted black;
@@ -99,35 +124,78 @@ button :link {
   line-height: 2rem;
 }
 .info-list li:nth-child(2n) {
-  background-color: rgba(228, 198, 198, 0.418);
+  color:black;
+  background-color: burlywood;
+}
+.info-list {display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.3rem;
+  margin:1.5rem;
+  
 }
 .info-list li {
-  padding: 0.3rem;
+  border-radius: 1.5rem;
+  padding:.5rem ;
+  color:whitesmoke;
+  background-color: rgba(99, 65, 21, 0.637)
 }
 
-.advantages {
-  margin: 1.3rem;
-  width: 25%;
+.advantages { flex-grow:1.5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
 }
 .advantages > p {
   font-size: 1.5rem;
 }
 .adv-list li:nth-child(2n) {
-  background-color: rgba(95, 158, 160, 0.561);
+  background-color: rgba(255, 235, 205, 0.692);
 }
-.adv-list {
+.adv-list { align-self: stretch;
   font-size: 1.5rem;
-  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+justify-content: space-around;
+}
+.adv-list li {
+  background-color: rgba(222, 184, 135, 0.52);
+  margin:.5rem;
+  padding: .3rem;
+  border-radius: 5px;
+  width:33.32%;
+  align-self: center:
+
+}
+figure > img {
+  width: 400px;
+  background-size: 100%;
+}
+figure {
+  color: rgb(121, 6, 25);
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+}
+.side-bar {
+  align-self: stretch;
+  flex-basis: 300px;
+  padding: 0.5rem;
+  text-align: center;
 }
 .side-bar > h2 {
+  font-size: 2rem;
   color: red;
 }
 .page-footer {
   border-radius: 2rem;
-  text-align: center;
   background-color: skyblue;
   font-size: 1.5rem;
+  align-self: center;
   width: 100%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 320px) {

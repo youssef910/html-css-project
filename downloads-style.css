@@ -9,52 +9,69 @@ html {
   margin: 0.5rem;
   padding: 0.7 rem;
 }
+
 #main {
   background-image: url(background2.jpg);
-  background-repeat: no-repeat center fixed;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: auto;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:100%;
 }
+.main-container {
+  flex-direction: column;
+  align-content: center;}
+
 #page-header {
-  background-image:url(tech-head.jpeg);
-  background-size:contain;
-  background-repeat:no-repeat center fixed;
+  background-image: url(tech-banner.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
   border-radius: 2rem;
   height: 13rem;
-  overflow: none;
-  border: 0.3rem solid;
+  border: 0.3rem solid black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 .ubunto-icon {
   width: 2.5rem;
 }
+
 #header-title {
   color: white;
-  text-align: center;
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 3rem;
+  font-style: italic;
   text-decoration: underline double;
   margin: 0.7rem;
   margin-bottom: 1.5rem;
+  align-self: center;
 }
-.menu {
+#menu {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between 2rem;
+  justify-content: space-around;
 }
-button {color:white;
-  font-size:2rem;
+button {
+   color: white;
+  font-size: 2rem;
   background-color: rgb(60, 108, 161);
   min-width: 3rem;
   min-width: 3rem;
   padding: 1rem;
-  border-radius: .5rem;
-  margin: 0;
+  border-radius: 1.5rem;
+  flex: 0.5 2 25%;
 }
+
 a{text-decoration:none; }
-button :hover {
-  background-color: rgb(202, 100, 16);
+
+button:hover {
+  background-color: rgb(238, 87, 213);
 }
 button :visited {
   color: cornsilk;
@@ -67,39 +84,48 @@ button :link {
   font-size: 1.25rem;
   margin-left: 3rem;
   font-style: italic;
+  align-self: flex-start;
 }
-#main > h1 {
+  * {margin:.6rem;}
+.install{
+  display:flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+ h1 {
   text-align: center;
   font-size: 2.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-#down-ubunto {
-  order: 2;
-  width: 50%;
+#down-ubunto {display:flex;
+  flex-direction: column;
 }
-
 #down-ubunto > h2 {
   font-size: 2rem;
-  margin-left: 25px;
+  margin-left: 
 }
-#down-ubunto ul {
+#down-ubunto ul {display: flex;
   list-style: square;
   line-height: 3rem;
   font-size: 1.5rem;
+  justify-content: space-around;
+}
+#down-ubunto li{
+  width:20%;
+  margin:.75rem;
+  padding: .5rem;
+  border-radius: 1.5rem;
 }
 article li:nth-child(odd) {
   background-color: rgba(0, 0, 255, 0.438);
-  width: 70%;
 }
 #download {
-  order: 3;
-  width: 50%;
+  width:45%;
   font-size: 2rem;
-  color: orchid;
   margin-left: 2rem;
 }
 #flash {
-  order: 4;
-  width: 50%;
+  width: 45%;
   margin-left: 2rem;
 }
 #flash > h3 {
@@ -110,24 +136,26 @@ article li:nth-child(odd) {
   font-size: 1.75rem;
 }
 #vid {
-  order: 5;
+  width: 100%;
   margin-left: 2rem;
+  text-align: center;
   color: orchid;
-  width: 50%;
   font-size: 2rem;
 }
 .page-footer {
   border-radius: 2rem;
-  text-align: center;
   background-color: skyblue;
   font-size: 1.5rem;
+  align-self: flex-end;
   width: 100%;
+  text-align: center;
 }
-@media only screen and (max-width:700px) {
+
+@media only screen and (max-width:px) {
 #main{font-size:small:}
 }
 
-@media only screen and (max-width: 320px) 
+@media only screen and (max-width: px) 
   {
     button {
       min-width: 46px;
