@@ -6,14 +6,14 @@ html {
   font-size: 15px;
   color: black;
   line-height: 2rem;
-  margin: 0.5rem;
+  margin:0rem;
   padding: 0.7 rem;
 }
 #main {
   background-image: url(background2.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  margin: auto;
+  background-size: cover;
+  margin: 1rem;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -74,10 +74,10 @@ button {
   font-size: 2rem;
   background-color: rgb(60, 108, 161);
   min-width: 3rem;
-  min-width: 3rem;
+  min-height: 3rem;
   padding: 1rem;
   border-radius: 1.5rem;
-  flex: 0.5 2 25%;
+  flex: 0.5 4 400px;
 }
 button:hover {
   background-color: rgb(238, 87, 213);
@@ -90,7 +90,7 @@ button :link {
 }
 #header-note {
   color: whitesmoke;
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-left: 3rem;
   font-style: italic;
   align-self: flex-start;
@@ -140,12 +140,9 @@ flex-direction: column;
   color:whitesmoke;
   background-color: rgba(99, 65, 21, 0.637)
 }
-
-.advantages { flex-grow:1.5;
+.advantages {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-content: stretch;
 }
 .advantages > p {
   font-size: 1.5rem;
@@ -153,24 +150,23 @@ flex-direction: column;
 .adv-list li:nth-child(2n) {
   background-color: rgba(255, 235, 205, 0.692);
 }
-.adv-list { align-self: stretch;
+.adv-list {
+  list-style:none ;
   font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 2;
-justify-content: space-around;
+
 }
 .adv-list li {
   background-color: rgba(222, 184, 135, 0.52);
-  margin:.5rem;
+  margin: 1rem;
   padding: .3rem;
   border-radius: 5px;
-  width:33.32%;
-  align-self: center:
-
+  flex:1 1 22.5%;
+align-self: center; 
 }
 figure > img {
-  width: 400px;
+  width: 500px;
   background-size: 100%;
 }
 figure {
@@ -196,67 +192,412 @@ figure {
   align-self: center;
   width: 100%;
   text-align: center;
+  margin: 1rem;
+      }
+.page-footer >p { margin: 0;
 }
 
-@media only screen and (max-width: 320px) {
-  button {
-    min-width: 3rem;
-    min-height: 3rem;
-    padding: 0.2rem;
+@media screen and (min-width:250px) and (max-width: 600px){body,
+  html {
+    background: rgb(34, 92, 157);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: 8px;
+    color: black;
+    line-height: 1rem;
     margin: 0rem;
+    padding: 0rem;
+  }
+  #main {
+    background-image: url(background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
   .container {
+    margin:1rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sub-cont {
+    width:100%;
     display: flex;
     flex-direction: column;
   }
   #page-header {
-    font-size: x-small;
+    background-image: url(tech-banner.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 1rem;
+    height: 11rem;
+    border: 0.3rem solid black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
   }
-  #main-info > p {
-    width: 100%;
-    height: 50px;
-    overflow: scroll;
-    scroll-behavior: smooth;
+  .ubunto-icon {
+    width: 2rem;
   }
-  .main-title {
-    width: 100%;
+  #header-title {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 3rem;
+    font-style: italic;
+    text-decoration: underline double;
+    margin: 0.7rem;
+    margin-bottom: 1.5rem;
+    align-self: center;
   }
-  html,
-  body {
+  #menu {
     width: 100%;
-    font-size: 0.5rem;
-    margin: 0;
-  }
-  .advantages > p {
-    font-size: x-small;
-    width: 100%;
-  }
-
-  .advantages {
-    width: 100%;
-  }
-  li {
-    max-height: 2.5rem;
-    overflow: scroll;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-size: x-small;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size:1.5rem;
   }
   a {
-    min-width: 46px;
-    min-height: 46px;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  button {
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(60, 108, 161);
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    padding: .25rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  button:hover {
+    background-color: rgb(238, 87, 213);
+  }
+  button :visited {
+    color: cornsilk;
+  }
+  button :link {
+    color: rgb(11, 238, 238);
+  }
+  #header-note {
+    color: whitesmoke;
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    font-style: italic;
+    align-self: flex-start;
+  }
+  #main {width:100%;
+  margin:0;
+  padding: 0;
+}
+  #main-address {
+    font-size: 3rem;
+    align-self: center;
+    text-decoration: underline double rgb(255, 115, 0);
+  }
+  .article-container {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+  #main-info {border : 3px solid black;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+    padding: .3rem;
+    font-size: 1.4rem;
+  }
+  .main-title {
+    text-align: center;
+    font-size: 2rem;
+    color: green;
+    text-decoration: underline dotted black;
+    margin-left: 1rem;
+  }
+  .main-title ~ p {
+    margin: 1rem;
+    line-height: 2rem;
   }
 
-  .ubunto-icon {
-    width: 20px;
-    height: 20px;
+  .info-list {display: none;
   }
-  .page-footer {
-    font-size: smaller;
+  
+  .advantages { flex-grow:1.5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+  .advantages > p {
+    font-size: 1.5rem;
+  }
+  .adv-list li:nth-child(2n) {
+    background-color: rgba(255, 235, 205, 0.692);
+  }
+  .adv-list { align-self: stretch;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  justify-content: space-around;
+  }
+  .adv-list li {
+    background-color: rgba(222, 184, 135, 0.52);
+    margin:.5rem;
+    padding: .3rem;
+    border-radius: 5px;
+    width:;
+    line-height: 1.5rem;
+    align-self: baseline;
+  
+  }
+  figure > img {
+    width: 200px;
+    background-size: 100%;
+  }
+  figure { flex-shrink:4; 
+    color: rgb(121, 6, 25);
+    text-align: center;
+    align-self: center;
+    font-size: 1.5rem;
   }
   .side-bar {
-    visibility: hidden;
+    display:none;
+    
+  }
+  .side-bar > h2 {
+    font-size: 2rem;
+    color: red;
+  }
+  .page-footer {
+    border-radius: 2rem;
+    background-color: skyblue;
+    font-size: 1.5rem;
+    align-self: center;
+    width: 100%;
+    text-align: center;
   }
 }
+   /* @media screen and (min-width:600px)
+     and (max-width:850px) {
+      body,
+      html {
+        background: rgb(34, 92, 157);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+        font-size: 10px;
+        color: black;
+        line-height: 2rem;
+        margin: 1rem;
+        padding: 0.7 rem;
+      }
+      #main {
+        background-image: url(background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 1rem;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+      }
+      .container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .sub-cont {
+        width:45%;
+        display: flex;
+        flex-direction: column;
+      }
+      #page-header {
+        background-image: url(tech-banner.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 2rem;
+        height: 13rem;
+        border: 0.3rem solid black;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
+      .ubunto-icon {
+        width: 2.5rem;
+      }
+      #header-title {
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 3rem;
+        font-style: italic;
+        text-decoration: underline double;
+        margin: 0.7rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
+      }
+      #menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      a {
+        text-decoration: none;
+      }
+      button {
+        color: white;
+        font-size: 2rem;
+        background-color: rgb(60, 108, 161);
+        min-width: 3rem;
+        min-height: 4rem;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        flex:1 1 100px;
+      }
+       button .item2{font-size:1.25rem;
+         flex:2 1 100px;}
+      }
+      button:hover {
+        background-color: rgb(238, 87, 213);
+      }
+      button :visited {
+        color: cornsilk;
+      }
+      button :link {
+        color: rgb(11, 238, 238);
+      }
+      #header-note {
+        color: whitesmoke;
+        font-size: 1rem;
+        margin-left: 3rem;
+        font-style: italic;
+        align-self: flex-start;
+      }
+      #main-address {
+        font-size: 3rem;
+        align-self: center;
+        text-decoration: underline double rgb(255, 115, 0);
+      }
+      .article-container {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+      }
+      #main-info {
+      display: flex;
+      flex-direction: column;
+        width: 45%;
+        padding: .3rem;
+        font-size: 1.4rem;
+      }
+      .main-title {
+        text-align: center;
+        font-size: 2rem;
+        color: green;
+        text-decoration: underline dotted black;
+        margin-left: 1rem;
+      }
+      .main-title ~ p {
+        margin: 1rem;
+        line-height: 2rem;
+      }
+      .info-list li:nth-child(2n) {
+        color:black;
+        background-color: burlywood;
+      }
+      .info-list {display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0.3rem;
+        margin:1.5rem;
+        
+      }
+      .info-list li {
+        border-radius: 1.5rem;
+        padding:.5rem ;
+        color:whitesmoke;
+        background-color: rgba(99, 65, 21, 0.637)
+      }
+      
+      .advantages { flex-grow:1.5;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: stretch;
+      }
+      .advantages > p {
+        font-size: 1.5rem;
+      }
+      .adv-list li:nth-child(2n) {
+        background-color: rgba(255, 235, 205, 0.692);
+      }
+      .adv-list { align-self: stretch;
+        font-size: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 2;
+      justify-content: space-around;
+      }
+      .adv-list li {
+        background-color: rgba(222, 184, 135, 0.52);
+        margin:.5rem;
+        padding: .3rem;
+        border-radius: 5px;
+        width:33.32%;
+        align-self: center:
+      
+      }
+      figure > img {
+        width: 400px;
+        background-size: 100%;
+      }
+      figure {
+        color: rgb(121, 6, 25);
+        text-align: center;
+        align-self: center;
+        font-size: 1.5rem;
+      }
+      .side-bar {
+        align-self: stretch;
+        flex-basis: 300px;
+        padding: 0.5rem;
+        text-align: center;
+      }
+      .side-bar > h2 {
+        font-size: 2rem;
+        color: red;
+      }
+      .page-footer {
+        border-radius: 2rem;
+        background-color: skyblue;
+        font-size: 1.5rem;
+        align-self: center;
+        width: 100%;
+        text-align: center;
+        margin: 1rem;
+      }
+.page-footer >p { margin: 0;
+
+}
+    }

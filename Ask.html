@@ -18,17 +18,21 @@
           </nav>
         </header>
     <div  id="main">
-        <form action="/action_page.php">
-          First name:<br>
-          <input type="text" name="firstname" value="firstname  "><br>
-          Last name:<br>
-          <input type="text" name="lastname" value="  lastname  "><br>
-          e-mail<br>
-          <input type="text" email="email" value="   email     "><br>
-          Question<br>
-          <input type="text" question="email" value="   ask question    "><br><br>
-          <input type="submit" value="Submit">
-        </form>
+      <div class="form">
+      <label>
+          First name
+          <input type="text" name="firstname" value="first name"required="required">
+        </label>
+        <label>last name:
+          <input type="text" name="last name" value="last name" required="required">
+        
+        </label> 
+        <label >
+     question:<textarea type="text" name="question" value="question" required="required">
+                ask your question here </textarea>
+              </label>  
+              <button type="submit" > send question </button>
+      </div>
         <footer class="page-footer">
             <P
               >Designed by
